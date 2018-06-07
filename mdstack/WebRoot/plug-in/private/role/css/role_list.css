@@ -1,0 +1,22 @@
+body{
+	padding: 0px 10px 0px 10px;
+}
+h4{
+	font-weight: bold;
+}
+.searchinput{
+	width: 200px;
+}
+.role_search_form{
+	min-width: 525px;
+}
+.btn{
+	margin-right: 5px;
+}
+.roleDiv{
+	padding: 10px;
+}
+.role_menu{
+	display: none;
+	padding: 10px 0px 0px 50px;
+}

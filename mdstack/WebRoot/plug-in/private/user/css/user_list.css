@@ -1,0 +1,22 @@
+body{
+	padding: 0px 10px 0px 10px;
+}
+h4{
+	font-weight: bold;
+}
+.searchinput{
+	width: 200px;
+}
+.addUserDiv{
+	padding: 10px;
+}
+.user_search_form{
+	min-width: 525px;
+}
+.btn{
+	margin-right: 5px;
+}
+.user_role_alert{
+	display: none;
+	padding: 10px 0px 0px 50px;
+}

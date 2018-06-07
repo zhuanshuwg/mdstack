@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+      	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       	http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/mvc
+		http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+	
+	<!--
+		自动扫描controller包下的所有类，使其认为spring mvc的控制器 加载controller的时候,
+		不加载service,因为此时事物并未生效,若 此时加载了service,那么事物无法对service进行拦截
+	-->
+	 
+	<context:component-scan base-package="mdstack.*">
+		<context:exclude-filter type="annotation"
+			expression="org.springframework.stereotype.Service" />
+	</context:component-scan>
+	
+	<!-- 拦截器 -->
+	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
+    	<property name="interceptors">
+			<list>
+				<ref bean="authInterceptor"/>
+				<ref bean="encodingInterceptor"/>
+			</list>
+		</property>
+    </bean>
+    <bean id="authInterceptor" class="org.framework.core.interceptors.AuthInterceptor">
+		<property name="excludeUrls">
+			<list>
+				<value>/</value>
+				<value>/login</value>
+				<value>/login/exit</value>
+				<value>/taxiController/takeTaxi</value>
+				<value>/appController/login</value><!-- App用户登录 -->
+				<value>/appController/updatePosition</value><!-- 更新用户位置信息 -->
+				<value>/appController/twoLanding</value><!-- 二次登陆 -->
+			</list>
+		</property>
+
+		<property name="clusterHiddenUrls">
+			<list>
+				<value>/home</value>
+				<value>/search</value>
+				<value>/real_monitor</value>
+				<value>/warn_monitor</value>
+				<value>/schedule_result</value>
+				<value>/web_upload</value>
+				<value>/config/toTimeRangeConfig</value>
+				<value>/config/toNormalization</value>
+				<value>/config/toSearchMng</value>
+				<value>/config/toSchedule</value>
+				<value>/config/datasource/toConfigGroup</value>
+				<value>/config/datasource/toSysLog</value>
+				<value>/config/datasource/toPullFile</value>
+				<value>/config/datasource/toDataBase</value>
+				<value>/config/datasource/config_import</value>
+				<value>/config/host_info</value>
+				<value>/config/dn_info</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="encodingInterceptor" class="org.framework.core.interceptors.EncodingInterceptor" />
+	
+	<!--
+		启动Spring MVC的注解功能，完成请求和注解POJO的映射，
+		配置一个基于注解的定制的WebBindingInitializer，解决日期转换问题，方法级别的处理器映射
+	-->
+	<bean
+		class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+		<property name="cacheSeconds" value="0" />
+		<property name="messageConverters">
+			<list>
+				<ref bean="mappingJacksonHttpMessageConverter" />
+			</list>
+		</property>
+		<property name="webBindingInitializer">
+			<bean class="org.framework.core.interceptors.MyWebBinding" />
+		</property>
+	</bean>
+
+	<bean id="mappingJacksonHttpMessageConverter"
+		class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+		<property name="supportedMediaTypes">
+			<list>
+				<!--<bean class="org.springframework.http.MediaType">
+					<constructor-arg index="0" value="text" />
+					<constructor-arg index="1" value="plain" />
+					<constructor-arg index="2" value="UTF-8" />
+				</bean>
+				<bean class="org.springframework.http.MediaType">
+					<constructor-arg index="0" value="*" />
+					<constructor-arg index="1" value="*" />
+					<constructor-arg index="2" value="UTF-8" />
+				</bean>
+				<bean class="org.springframework.http.MediaType">
+					<constructor-arg index="0" value="text" />
+					<constructor-arg index="1" value="*" />
+					<constructor-arg index="2" value="UTF-8" />
+				</bean>
+				--><bean class="org.springframework.http.MediaType">
+					<constructor-arg index="0" value="application" />
+					<constructor-arg index="1" value="json" />
+					<constructor-arg index="2" value="UTF-8" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+
+	
+	<!-- 默认的视图解析器 在上边的解析错误时使用 (默认使用html) -->
+	<bean id="defaultViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+		p:order="3">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+		<property name="contentType" value="text/html" />
+		<property name="prefix" value="/WEB-INF/pages/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver"
+		p:defaultEncoding="UTF-8">
+		<property name="maxUploadSize">
+			<value>5368709120</value><!-- 5G -->
+		</property>
+		<property name="maxInMemorySize">
+			<value>4096</value>
+		</property>
+	</bean>
+	
+	<!-- 异常处理类 -->
+	<bean id="myExceptionResolver"
+		class="org.framework.core.common.exception.MyExceptionResolver"/>
+	
+	<!-- 处理静态资源 -->
+	<mvc:default-servlet-handler/>
+	
+	
+</beans>

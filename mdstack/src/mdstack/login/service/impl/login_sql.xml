@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+    "-//DynamicStatement Mapper DTD 1.0//EN"
+    "http://www.org/dtd/dynamicStatement-1-mapper.dtd">
+    
+<mapper namespace="zcManage" >
+
+	<sql id="getServiceData" >
+		<![CDATA[
+		 select sid,servicename,protocol,port,description from t_service  where 1=1 
+			<#if StringUtils('notEmptyForJS',servicename) >and servicename  ='${servicename}' </#if>
+			<#if StringUtils('notEmptyForJS',protocol) >and protocol ='${protocol}'</#if>
+			<#if StringUtils('notEmptyForJS',port) >and port = '${port}'</#if>
+		]]>
+	</sql>
+	<sql id="getEffectData" >
+		<![CDATA[
+		 select apid,apname,apdesc from t_assetpurpose  where 1=1 
+			<#if StringUtils('notEmptyForJS',apname) >and apname ='${apname}'</#if>
+			order by apid asc
+		]]>
+	</sql>
+	<sql id="getTypeData" >
+		<![CDATA[
+	        select  acid,acname,acdesc from t_assetcategory  where 1=1 
+			<#if StringUtils('notEmptyForJS',acname) >and acname ='${acname}'</#if>
+			order by acid asc
+		]]>
+	</sql>
+	<sql id="getStateData" >
+		<![CDATA[
+		    select  asid,asname,asdesc from t_assetstatus  where 1=1 
+			<#if StringUtils('notEmptyForJS',asname) >and asname ='${asname}'</#if>
+			order by asid asc
+		]]>
+	</sql>
+	<sql id="getCSV">
+	<![CDATA[
+	   select bk_id, ip, source, match_type,enable, upd_date, ins_date, 
+		description from t_blacklist_ip 
+			where 1=1 
+			<#if StringUtils('notEmptyForJS',ip) >and ip  ${ipSymbol} '${ip}' </#if>
+			<#if StringUtils('notEmptyForJS',match_type) >and match_type ='${match_type}'</#if>
+			<#if StringUtils('notEmptyForJS',source) >and source ${sourceSymbol} '${source}' </#if>
+			<#if StringUtils('notEmptyForJS',enable) >and enable ='${enable}' </#if>
+			<#if StringUtils('notEmptyForJS',start_Time) >and upd_date>=to_timestamp('${start_Time}','yyyy-MM-dd')</#if>
+			<#if StringUtils('notEmptyForJS',end_Time) >and upd_date<=to_timestamp('${end_Time}','yyyy-MM-dd')</#if>
+           order by upd_date desc, ip 
+         ]]>
+	</sql>
+    	<sql id="getZcInfo">
+	<![CDATA[
+	   select * from (select * from t_asset t,t_assetpurpose t1 ,t_assetcategory t3,
+	            t_assetstatus t2  where t.apid= t1.apid and t.acid=t3.acid and t.asid=t2.asid) t4,
+	            (select d.depid,d.depname ,s.startlip ,s.endlip  from t_department d,
+	            t_ipranges s where s.depid=d.depid and d.depid='${id}') t5  where t4.lip between  t5.startlip and t5.endlip
+         ]]>
+	</sql> 
+	<sql id="getAssetInfo">
+	<![CDATA[
+	         select * from (select t.*,t1.apname,t2.asname,t3.acname from t_asset t,t_assetpurpose t1 ,t_assetcategory t3,
+	            t_assetstatus t2  where t.apid= t1.apid and t.acid=t3.acid and t.asid=t2.asid) t4 ,(select * from t_department t5,
+	            ( select a.ip,max(b.depid) as id from t_asset a,t_ipranges b where a.lip between b.startlip and  b.endlip group by a.ip) r 
+	            where t5.depid= r.id) t6  where t4.ip=t6.ip
+	         <#if StringUtils('notEmptyForJS',assetname) >and t4.assetname ='${assetname}' </#if>
+	         <#if StringUtils('notEmptyForJS',assetcode) >and t4.assetcode ='${assetcode}' </#if>
+	         <#if StringUtils('notEmptyForJS',specification) >and t4.specification ='${specification}' </#if>
+	         <#if StringUtils('notEmptyForJS',application) >and t4.application ='${application}' </#if>
+	         <#if StringUtils('notEmptyForJS',slot) >and t4.slot ='${slot}' </#if>
+	         <#if StringUtils('notEmptyForJS',cabinet) >and t4.cabinet ='${cabinet}' </#if>
+	         <#if StringUtils('notEmptyForJS',position) >and t4.position ='${position}' </#if>
+	         <#if StringUtils('notEmptyForJS',acid) >and t4.acid ='${acid}' </#if>
+	         <#if StringUtils('notEmptyForJS',apid) >and t4.apid ='${apid}' </#if>
+	         <#if StringUtils('notEmptyForJS',asid) >and t4.asid ='${asid}' </#if>
+	         <#if StringUtils('notEmptyForJS',linkman) >and t4.linkman ='${linkman}' </#if>
+	         <#if '${ipType}'=='ip' && StringUtils('notEmptyForJS',ip_start_num)>and t4.lip ='${ip_start_num}'
+	            <#elseif '${ipType}'=='range' && StringUtils('notEmptyForJS',ip_start_num) && StringUtils('notEmptyForJS',ip_end_num)> 
+	                  and t4.lip between '${ip_start_num}' and '${ip_end_num}'
+	         </#if>
+	         <#if StringUtils('notEmptyForJS',dep_selectid) >and t4.lip between '${dep_start}' and '${dep_end}' and t6.depid='${dep_selectid}' </#if>
+	         
+         ]]>
+	</sql>
+</mapper>

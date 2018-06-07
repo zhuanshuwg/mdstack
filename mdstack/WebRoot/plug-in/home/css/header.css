@@ -1,0 +1,19 @@
+body{
+	color: #f0f1f1;
+}
+body a{
+	color: #f0f1f1;
+}
+.header_title{
+	padding: 10px;
+	float: left;
+}
+.header_info{
+	float: right;
+	margin-top: 30px;
+}
+.header_info a{
+	margin: 10px 10px 0px 20px;
+	cursor: pointer;
+	text-decoration:none;
+}

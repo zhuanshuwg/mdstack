@@ -1,0 +1,770 @@
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1460] - [DEBUG] Static SQL for entity: mdstack.user.entity.User
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1460] - [DEBUG]  Version select: select id from t_user where id =?
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1460] - [DEBUG]  Snapshot select: select user_.id, user_.isDisable as isDisable0_, user_.realName as realName0_, user_.tel as tel0_, user_.userName as userName0_, user_.userPwd as userPwd0_ from t_user user_ where user_.id=?
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1460] - [DEBUG]  Insert 0: insert into t_user (isDisable, realName, tel, userName, userPwd, id) values (?, ?, ?, ?, ?, ?)
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1460] - [DEBUG]  Update 0: update t_user set isDisable=?, realName=?, tel=?, userName=?, userPwd=? where id=?
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1461] - [DEBUG]  Delete 0: delete from t_user where id=?
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1461] - [DEBUG]  Identity insert: insert into t_user (isDisable, realName, tel, userName, userPwd) values (?, ?, ?, ?, ?)
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1462] - [DEBUG] Static SQL for entity: mdstack.role.entity.Role
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1462] - [DEBUG]  Version select: select id from t_role where id =?
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1462] - [DEBUG]  Snapshot select: select role_.id, role_.descrption as descrption1_, role_.roleName as roleName1_ from t_role role_ where role_.id=?
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1462] - [DEBUG]  Insert 0: insert into t_role (descrption, roleName, id) values (?, ?, ?)
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1463] - [DEBUG]  Update 0: update t_role set descrption=?, roleName=? where id=?
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1463] - [DEBUG]  Delete 0: delete from t_role where id=?
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1463] - [DEBUG]  Identity insert: insert into t_role (descrption, roleName) values (?, ?)
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1480] - [DEBUG] Static select for entity mdstack.user.entity.User [NONE]: select user0_.id as id0_0_, user0_.isDisable as isDisable0_0_, user0_.realName as realName0_0_, user0_.tel as tel0_0_, user0_.userName as userName0_0_, user0_.userPwd as userPwd0_0_ from t_user user0_ where user0_.id=?
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1480] - [DEBUG] Static select for entity mdstack.user.entity.User [READ]: select user0_.id as id0_0_, user0_.isDisable as isDisable0_0_, user0_.realName as realName0_0_, user0_.tel as tel0_0_, user0_.userName as userName0_0_, user0_.userPwd as userPwd0_0_ from t_user user0_ where user0_.id=?
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1480] - [DEBUG] Static select for entity mdstack.user.entity.User [UPGRADE]: select user0_.id as id0_0_, user0_.isDisable as isDisable0_0_, user0_.realName as realName0_0_, user0_.tel as tel0_0_, user0_.userName as userName0_0_, user0_.userPwd as userPwd0_0_ from t_user user0_ where user0_.id=? for update
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1480] - [DEBUG] Static select for entity mdstack.user.entity.User [UPGRADE_NOWAIT]: select user0_.id as id0_0_, user0_.isDisable as isDisable0_0_, user0_.realName as realName0_0_, user0_.tel as tel0_0_, user0_.userName as userName0_0_, user0_.userPwd as userPwd0_0_ from t_user user0_ where user0_.id=? for update
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1480] - [DEBUG] Static select for entity mdstack.user.entity.User [FORCE]: select user0_.id as id0_0_, user0_.isDisable as isDisable0_0_, user0_.realName as realName0_0_, user0_.tel as tel0_0_, user0_.userName as userName0_0_, user0_.userPwd as userPwd0_0_ from t_user user0_ where user0_.id=? for update
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1480] - [DEBUG] Static select for entity mdstack.user.entity.User [PESSIMISTIC_READ]: select user0_.id as id0_0_, user0_.isDisable as isDisable0_0_, user0_.realName as realName0_0_, user0_.tel as tel0_0_, user0_.userName as userName0_0_, user0_.userPwd as userPwd0_0_ from t_user user0_ where user0_.id=? lock in share mode
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1481] - [DEBUG] Static select for entity mdstack.user.entity.User [PESSIMISTIC_WRITE]: select user0_.id as id0_0_, user0_.isDisable as isDisable0_0_, user0_.realName as realName0_0_, user0_.tel as tel0_0_, user0_.userName as userName0_0_, user0_.userPwd as userPwd0_0_ from t_user user0_ where user0_.id=? for update
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1481] - [DEBUG] Static select for entity mdstack.user.entity.User [PESSIMISTIC_FORCE_INCREMENT]: select user0_.id as id0_0_, user0_.isDisable as isDisable0_0_, user0_.realName as realName0_0_, user0_.tel as tel0_0_, user0_.userName as userName0_0_, user0_.userPwd as userPwd0_0_ from t_user user0_ where user0_.id=? for update
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1481] - [DEBUG] Static select for entity mdstack.user.entity.User [OPTIMISTIC]: select user0_.id as id0_0_, user0_.isDisable as isDisable0_0_, user0_.realName as realName0_0_, user0_.tel as tel0_0_, user0_.userName as userName0_0_, user0_.userPwd as userPwd0_0_ from t_user user0_ where user0_.id=?
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1481] - [DEBUG] Static select for entity mdstack.user.entity.User [OPTIMISTIC_FORCE_INCREMENT]: select user0_.id as id0_0_, user0_.isDisable as isDisable0_0_, user0_.realName as realName0_0_, user0_.tel as tel0_0_, user0_.userName as userName0_0_, user0_.userPwd as userPwd0_0_ from t_user user0_ where user0_.id=?
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1488] - [DEBUG] Static select for action ACTION_MERGE on entity mdstack.user.entity.User: select user0_.id as id0_0_, user0_.isDisable as isDisable0_0_, user0_.realName as realName0_0_, user0_.tel as tel0_0_, user0_.userName as userName0_0_, user0_.userPwd as userPwd0_0_ from t_user user0_ where user0_.id=?
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1488] - [DEBUG] Static select for action ACTION_REFRESH on entity mdstack.user.entity.User: select user0_.id as id0_0_, user0_.isDisable as isDisable0_0_, user0_.realName as realName0_0_, user0_.tel as tel0_0_, user0_.userName as userName0_0_, user0_.userPwd as userPwd0_0_ from t_user user0_ where user0_.id=?
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1489] - [DEBUG] Static select for entity mdstack.role.entity.Role [NONE]: select role0_.id as id1_0_, role0_.descrption as descrption1_0_, role0_.roleName as roleName1_0_ from t_role role0_ where role0_.id=?
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1489] - [DEBUG] Static select for entity mdstack.role.entity.Role [READ]: select role0_.id as id1_0_, role0_.descrption as descrption1_0_, role0_.roleName as roleName1_0_ from t_role role0_ where role0_.id=?
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1489] - [DEBUG] Static select for entity mdstack.role.entity.Role [UPGRADE]: select role0_.id as id1_0_, role0_.descrption as descrption1_0_, role0_.roleName as roleName1_0_ from t_role role0_ where role0_.id=? for update
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1489] - [DEBUG] Static select for entity mdstack.role.entity.Role [UPGRADE_NOWAIT]: select role0_.id as id1_0_, role0_.descrption as descrption1_0_, role0_.roleName as roleName1_0_ from t_role role0_ where role0_.id=? for update
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1489] - [DEBUG] Static select for entity mdstack.role.entity.Role [FORCE]: select role0_.id as id1_0_, role0_.descrption as descrption1_0_, role0_.roleName as roleName1_0_ from t_role role0_ where role0_.id=? for update
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1489] - [DEBUG] Static select for entity mdstack.role.entity.Role [PESSIMISTIC_READ]: select role0_.id as id1_0_, role0_.descrption as descrption1_0_, role0_.roleName as roleName1_0_ from t_role role0_ where role0_.id=? lock in share mode
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1489] - [DEBUG] Static select for entity mdstack.role.entity.Role [PESSIMISTIC_WRITE]: select role0_.id as id1_0_, role0_.descrption as descrption1_0_, role0_.roleName as roleName1_0_ from t_role role0_ where role0_.id=? for update
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1489] - [DEBUG] Static select for entity mdstack.role.entity.Role [PESSIMISTIC_FORCE_INCREMENT]: select role0_.id as id1_0_, role0_.descrption as descrption1_0_, role0_.roleName as roleName1_0_ from t_role role0_ where role0_.id=? for update
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1489] - [DEBUG] Static select for entity mdstack.role.entity.Role [OPTIMISTIC]: select role0_.id as id1_0_, role0_.descrption as descrption1_0_, role0_.roleName as roleName1_0_ from t_role role0_ where role0_.id=?
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1490] - [DEBUG] Static select for entity mdstack.role.entity.Role [OPTIMISTIC_FORCE_INCREMENT]: select role0_.id as id1_0_, role0_.descrption as descrption1_0_, role0_.roleName as roleName1_0_ from t_role role0_ where role0_.id=?
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1490] - [DEBUG] Static select for action ACTION_MERGE on entity mdstack.role.entity.Role: select role0_.id as id1_0_, role0_.descrption as descrption1_0_, role0_.roleName as roleName1_0_ from t_role role0_ where role0_.id=?
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1490] - [DEBUG] Static select for action ACTION_REFRESH on entity mdstack.role.entity.Role: select role0_.id as id1_0_, role0_.descrption as descrption1_0_, role0_.roleName as roleName1_0_ from t_role role0_ where role0_.id=?
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1493] - [DEBUG] Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@519096ca
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1493] - [DEBUG] Registering SessionFactory: 2e55852e-a964-4f39-bae2-d5e8291b2d72 (<unnamed>)
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1493] - [DEBUG] Not binding SessionFactory to JNDI, no JNDI name configured
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1493] - [DEBUG] Instantiated session factory
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1494] - [DEBUG] Checking 0 named HQL queries
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1494] - [DEBUG] Checking 0 named SQL queries
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1499] - [DEBUG] Statistics initialized [enabled=false]
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1500] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1500] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1500] - [DEBUG] Finished creating instance of bean 'sessionFactory'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1500] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1500] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1506] - [DEBUG] Autowiring by type from bean name 'commonDao' to bean named 'sessionFactory'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1506] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1506] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1507] - [DEBUG] Finished creating instance of bean 'commonDao'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1507] - [DEBUG] Creating shared instance of singleton bean 'jdbcDao'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1507] - [DEBUG] Creating instance of bean 'jdbcDao'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1507] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1520] - [DEBUG] Returning cached instance of singleton bean 'dataSource_mdstack'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1520] - [DEBUG] Returning cached instance of singleton bean 'dataSource'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1521] - [DEBUG] Autowiring by type from bean name 'jdbcDao' via constructor to bean named 'dataSource'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1583] - [DEBUG] incremented pending_acquires: 1
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1583] - [DEBUG] incremented pending_acquires: 2
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1583] - [DEBUG] incremented pending_acquires: 3
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1583] - [DEBUG] incremented pending_acquires: 4
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1583] - [DEBUG] incremented pending_acquires: 5
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1583] - [DEBUG] incremented pending_acquires: 6
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1583] - [DEBUG] incremented pending_acquires: 7
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1583] - [DEBUG] incremented pending_acquires: 8
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1583] - [DEBUG] incremented pending_acquires: 9
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1583] - [DEBUG] incremented pending_acquires: 10
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1583] - [DEBUG] com.mchange.v2.resourcepool.BasicResourcePool@1fd94094 config: [start -> 10; min -> 10; max -> 20; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 5000000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 900000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1583] - [INFO] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgf4by9v1o0rs68f9q18t|bb8b1c1, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.gjt.mm.mysql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgf4by9v1o0rs68f9q18t|bb8b1c1, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/mdstack?useUnicode=true&characterEncoding=gbk&useOldAliasMetadataBehavior=true, lastAcquisitionFailureDefaultUser -> null, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 5000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1584] - [DEBUG] acquire test -- pool size: 0; target_pool_size: 10; desired target? 1
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1584] - [DEBUG] awaitAvailable(): [unknown]
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1584] - [DEBUG] trace com.mchange.v2.resourcepool.BasicResourcePool@1fd94094 [managed: 0, unused: 0, excluded: 0]
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1777] - [DEBUG] com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22594c4d.acquireResource() returning. 
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1777] - [DEBUG] com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22594c4d.acquireResource() returning. 
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1777] - [DEBUG] com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22594c4d.acquireResource() returning. 
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1778] - [DEBUG] trace com.mchange.v2.resourcepool.BasicResourcePool@1fd94094 [managed: 1, unused: 1, excluded: 0]
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1778] - [DEBUG] trace com.mchange.v2.resourcepool.BasicResourcePool@1fd94094 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5e18bf09)
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1778] - [DEBUG] trace com.mchange.v2.resourcepool.BasicResourcePool@1fd94094 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5e18bf09)
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1778] - [DEBUG] decremented pending_acquires: 9
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1778] - [DEBUG] trace com.mchange.v2.resourcepool.BasicResourcePool@1fd94094 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5e18bf09)
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1778] - [DEBUG] decremented pending_acquires: 8
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1779] - [DEBUG] decremented pending_acquires: 7
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1786] - [DEBUG] com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22594c4d.acquireResource() returning. 
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1786] - [DEBUG] trace com.mchange.v2.resourcepool.BasicResourcePool@1fd94094 [managed: 4, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5e18bf09)
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1787] - [DEBUG] decremented pending_acquires: 6
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1794] - [DEBUG] com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22594c4d.acquireResource() returning. 
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1794] - [DEBUG] trace com.mchange.v2.resourcepool.BasicResourcePool@1fd94094 [managed: 5, unused: 4, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5e18bf09)
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1794] - [DEBUG] decremented pending_acquires: 5
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1809] - [DEBUG] com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22594c4d.acquireResource() returning. 
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1809] - [DEBUG] trace com.mchange.v2.resourcepool.BasicResourcePool@1fd94094 [managed: 6, unused: 5, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5e18bf09)
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1809] - [DEBUG] decremented pending_acquires: 4
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1809] - [DEBUG] com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22594c4d.acquireResource() returning. 
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1809] - [DEBUG] trace com.mchange.v2.resourcepool.BasicResourcePool@1fd94094 [managed: 7, unused: 6, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5e18bf09)
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1809] - [DEBUG] decremented pending_acquires: 3
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1813] - [DEBUG] Found injected element on class [org.framework.core.common.dao.jdbc.JdbcDao]: AutowiredMethodElement for public void org.framework.core.common.dao.BaseDao.setDynamicStatementBuilder(org.framework.core.statement.DynamicStatementBuilder)
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1813] - [DEBUG] Eagerly caching bean 'jdbcDao' to allow for resolving potential circular references
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1817] - [DEBUG] com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22594c4d.acquireResource() returning. 
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1817] - [DEBUG] trace com.mchange.v2.resourcepool.BasicResourcePool@1fd94094 [managed: 8, unused: 7, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5e18bf09)
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:1817] - [DEBUG] decremented pending_acquires: 2
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1821] - [DEBUG] com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22594c4d.acquireResource() returning. 
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1821] - [DEBUG] trace com.mchange.v2.resourcepool.BasicResourcePool@1fd94094 [managed: 9, unused: 8, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5e18bf09)
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:1821] - [DEBUG] decremented pending_acquires: 1
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1825] - [DEBUG] Creating shared instance of singleton bean 'dynamicStatementBuilder'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1825] - [DEBUG] Creating instance of bean 'dynamicStatementBuilder'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1825] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1827] - [DEBUG] Eagerly caching bean 'dynamicStatementBuilder' to allow for resolving potential circular references
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1831] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1831] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1832] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1832] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1832] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1832] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1832] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1832] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1832] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1832] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1832] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1832] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1832] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1832] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1832] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1832] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1832] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1832] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1832] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1832] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1833] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1833] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1833] - [DEBUG] Finished creating instance of bean 'dynamicStatementBuilder'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1833] - [DEBUG] Added autowiring by name from bean name 'jdbcDao' via property 'dynamicStatementBuilder' to bean named 'dynamicStatementBuilder'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1833] - [DEBUG] Processing injected method of bean 'jdbcDao': AutowiredMethodElement for public void org.framework.core.common.dao.BaseDao.setDynamicStatementBuilder(org.framework.core.statement.DynamicStatementBuilder)
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1833] - [DEBUG] com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@22594c4d.acquireResource() returning. 
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1833] - [DEBUG] trace com.mchange.v2.resourcepool.BasicResourcePool@1fd94094 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5e18bf09)
+2018-06-07 11:37:37 [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:1833] - [DEBUG] decremented pending_acquires: 0
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1833] - [DEBUG] Invoking afterPropertiesSet() on bean with name 'jdbcDao'
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1868] - [DEBUG] trying to resolve system-id [http://www.org/dtd/dynamicStatement-1-mapper.dtd]
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1868] - [DEBUG] recognized dyanmic statement namespace; attempting to resolve on classpath under org/framework/core/statement/
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1869] - [DEBUG] located [http://www.org/dtd/dynamicStatement-1-mapper.dtd] in classpath
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1890] - [DEBUG] trying to resolve system-id [http://www.org/dtd/dynamicStatement-1-mapper.dtd]
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1890] - [DEBUG] recognized dyanmic statement namespace; attempting to resolve on classpath under org/framework/core/statement/
+2018-06-07 11:37:37 [192.168.199.174-startStop-1:1890] - [DEBUG] located [http://www.org/dtd/dynamicStatement-1-mapper.dtd] in classpath
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2052] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2052] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2053] - [DEBUG] Finished creating instance of bean 'jdbcDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2053] - [DEBUG] Creating shared instance of singleton bean 'commonService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2053] - [DEBUG] Creating instance of bean 'commonService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2053] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2060] - [DEBUG] Found injected element on class [org.framework.core.common.service.impl.CommonServiceImpl]: AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setJdbcDao(org.framework.core.common.dao.jdbc.JdbcDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2060] - [DEBUG] Found injected element on class [org.framework.core.common.service.impl.CommonServiceImpl]: AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setCommonDao(org.framework.core.common.dao.ICommonDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2060] - [DEBUG] Found injected element on class [org.framework.core.common.service.impl.CommonServiceImpl]: AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setElasticsearchDao(org.framework.core.common.dao.elasticsearch.ElasticsearchDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2060] - [DEBUG] Eagerly caching bean 'commonService' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2060] - [DEBUG] Returning cached instance of singleton bean 'commonDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2060] - [DEBUG] Added autowiring by name from bean name 'commonService' via property 'commonDao' to bean named 'commonDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2060] - [DEBUG] Returning cached instance of singleton bean 'elasticsearchDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2060] - [DEBUG] Added autowiring by name from bean name 'commonService' via property 'elasticsearchDao' to bean named 'elasticsearchDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2060] - [DEBUG] Returning cached instance of singleton bean 'jdbcDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2060] - [DEBUG] Added autowiring by name from bean name 'commonService' via property 'jdbcDao' to bean named 'jdbcDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2060] - [DEBUG] Processing injected method of bean 'commonService': AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setJdbcDao(org.framework.core.common.dao.jdbc.JdbcDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2060] - [DEBUG] Processing injected method of bean 'commonService': AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setCommonDao(org.framework.core.common.dao.ICommonDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2060] - [DEBUG] Processing injected method of bean 'commonService': AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setElasticsearchDao(org.framework.core.common.dao.elasticsearch.ElasticsearchDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2061] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2061] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2062] - [DEBUG] Adding transactional method 'delete' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2063] - [DEBUG] Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2063] - [DEBUG] Creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2065] - [DEBUG] Eagerly caching bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2072] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2072] - [DEBUG] Invoking afterPropertiesSet() on bean with name 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2072] - [DEBUG] Finished creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2083] - [DEBUG] Creating implicit proxy for bean 'commonService' with 0 common interceptors and 1 specific interceptors
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2085] - [DEBUG] Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [org.framework.core.common.service.impl.CommonServiceImpl@de41e03]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2090] - [DEBUG] Finished creating instance of bean 'commonService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2091] - [DEBUG] Creating shared instance of singleton bean 'publicService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2091] - [DEBUG] Creating instance of bean 'publicService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2091] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2091] - [DEBUG] Found injected element on class [mdstack.login.service.impl.PublicServiceImpl]: AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setJdbcDao(org.framework.core.common.dao.jdbc.JdbcDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2091] - [DEBUG] Found injected element on class [mdstack.login.service.impl.PublicServiceImpl]: AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setCommonDao(org.framework.core.common.dao.ICommonDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2091] - [DEBUG] Found injected element on class [mdstack.login.service.impl.PublicServiceImpl]: AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setElasticsearchDao(org.framework.core.common.dao.elasticsearch.ElasticsearchDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2091] - [DEBUG] Eagerly caching bean 'publicService' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2102] - [DEBUG] Returning cached instance of singleton bean 'commonDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2102] - [DEBUG] Added autowiring by name from bean name 'publicService' via property 'commonDao' to bean named 'commonDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2102] - [DEBUG] Returning cached instance of singleton bean 'elasticsearchDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2103] - [DEBUG] Added autowiring by name from bean name 'publicService' via property 'elasticsearchDao' to bean named 'elasticsearchDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2103] - [DEBUG] Returning cached instance of singleton bean 'jdbcDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2103] - [DEBUG] Added autowiring by name from bean name 'publicService' via property 'jdbcDao' to bean named 'jdbcDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2103] - [DEBUG] Processing injected method of bean 'publicService': AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setJdbcDao(org.framework.core.common.dao.jdbc.JdbcDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2103] - [DEBUG] Processing injected method of bean 'publicService': AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setCommonDao(org.framework.core.common.dao.ICommonDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2103] - [DEBUG] Processing injected method of bean 'publicService': AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setElasticsearchDao(org.framework.core.common.dao.elasticsearch.ElasticsearchDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2103] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2103] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2103] - [DEBUG] Adding transactional method 'delete' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2103] - [DEBUG] Creating implicit proxy for bean 'publicService' with 0 common interceptors and 1 specific interceptors
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2103] - [DEBUG] Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [mdstack.login.service.impl.PublicServiceImpl@6812d2f2]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2117] - [DEBUG] Finished creating instance of bean 'publicService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2117] - [DEBUG] Creating shared instance of singleton bean 'userService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2117] - [DEBUG] Creating instance of bean 'userService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2117] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2118] - [DEBUG] Found injected element on class [mdstack.user.service.impl.UserServiceImpl]: AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setJdbcDao(org.framework.core.common.dao.jdbc.JdbcDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2118] - [DEBUG] Found injected element on class [mdstack.user.service.impl.UserServiceImpl]: AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setCommonDao(org.framework.core.common.dao.ICommonDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2118] - [DEBUG] Found injected element on class [mdstack.user.service.impl.UserServiceImpl]: AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setElasticsearchDao(org.framework.core.common.dao.elasticsearch.ElasticsearchDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2118] - [DEBUG] Eagerly caching bean 'userService' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2129] - [DEBUG] Returning cached instance of singleton bean 'commonDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2129] - [DEBUG] Added autowiring by name from bean name 'userService' via property 'commonDao' to bean named 'commonDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2129] - [DEBUG] Returning cached instance of singleton bean 'elasticsearchDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2129] - [DEBUG] Added autowiring by name from bean name 'userService' via property 'elasticsearchDao' to bean named 'elasticsearchDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2129] - [DEBUG] Returning cached instance of singleton bean 'jdbcDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2129] - [DEBUG] Added autowiring by name from bean name 'userService' via property 'jdbcDao' to bean named 'jdbcDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2129] - [DEBUG] Processing injected method of bean 'userService': AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setJdbcDao(org.framework.core.common.dao.jdbc.JdbcDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2129] - [DEBUG] Processing injected method of bean 'userService': AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setCommonDao(org.framework.core.common.dao.ICommonDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2129] - [DEBUG] Processing injected method of bean 'userService': AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setElasticsearchDao(org.framework.core.common.dao.elasticsearch.ElasticsearchDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2129] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2129] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2130] - [DEBUG] Adding transactional method 'delete' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2130] - [DEBUG] Creating implicit proxy for bean 'userService' with 0 common interceptors and 1 specific interceptors
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2130] - [DEBUG] Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [mdstack.user.service.impl.UserServiceImpl@7052d4fe]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2133] - [DEBUG] Finished creating instance of bean 'userService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2133] - [DEBUG] Creating shared instance of singleton bean 'warnDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2133] - [DEBUG] Creating instance of bean 'warnDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2133] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2134] - [DEBUG] Eagerly caching bean 'warnDao' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2138] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2138] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2138] - [DEBUG] Finished creating instance of bean 'warnDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2138] - [DEBUG] Creating shared instance of singleton bean 'warnService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2138] - [DEBUG] Creating instance of bean 'warnService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2138] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2139] - [DEBUG] Found injected element on class [mdstack.warn.service.impl.WarnServiceImpl]: AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setJdbcDao(org.framework.core.common.dao.jdbc.JdbcDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2139] - [DEBUG] Found injected element on class [mdstack.warn.service.impl.WarnServiceImpl]: AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setCommonDao(org.framework.core.common.dao.ICommonDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2139] - [DEBUG] Found injected element on class [mdstack.warn.service.impl.WarnServiceImpl]: AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setElasticsearchDao(org.framework.core.common.dao.elasticsearch.ElasticsearchDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2139] - [DEBUG] Eagerly caching bean 'warnService' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2148] - [DEBUG] Returning cached instance of singleton bean 'commonDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2148] - [DEBUG] Added autowiring by name from bean name 'warnService' via property 'commonDao' to bean named 'commonDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2148] - [DEBUG] Returning cached instance of singleton bean 'elasticsearchDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2148] - [DEBUG] Added autowiring by name from bean name 'warnService' via property 'elasticsearchDao' to bean named 'elasticsearchDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2148] - [DEBUG] Returning cached instance of singleton bean 'jdbcDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2148] - [DEBUG] Added autowiring by name from bean name 'warnService' via property 'jdbcDao' to bean named 'jdbcDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2148] - [DEBUG] Processing injected method of bean 'warnService': AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setJdbcDao(org.framework.core.common.dao.jdbc.JdbcDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2148] - [DEBUG] Processing injected method of bean 'warnService': AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setCommonDao(org.framework.core.common.dao.ICommonDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2148] - [DEBUG] Processing injected method of bean 'warnService': AutowiredMethodElement for public void org.framework.core.common.service.impl.CommonServiceImpl.setElasticsearchDao(org.framework.core.common.dao.elasticsearch.ElasticsearchDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2148] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2148] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2148] - [DEBUG] Adding transactional method 'createIndex' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2148] - [DEBUG] Creating implicit proxy for bean 'warnService' with 0 common interceptors and 1 specific interceptors
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2148] - [DEBUG] Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [mdstack.warn.service.impl.WarnServiceImpl@283fa0fb]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2152] - [DEBUG] Finished creating instance of bean 'warnService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2152] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2152] - [DEBUG] Returning cached instance of singleton bean 'dataSource_mdstack'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2152] - [DEBUG] Returning cached instance of singleton bean 'dataSource'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2152] - [DEBUG] Returning cached instance of singleton bean 'sessionFactory'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2153] - [DEBUG] Returning cached instance of singleton bean 'dynamicStatementBuilder'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2153] - [DEBUG] Creating shared instance of singleton bean 'transactionManager'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2153] - [DEBUG] Creating instance of bean 'transactionManager'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2153] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2160] - [DEBUG] Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2168] - [DEBUG] Returning cached instance of singleton bean 'dataSource'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2168] - [DEBUG] Added autowiring by name from bean name 'transactionManager' via property 'dataSource' to bean named 'dataSource'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2168] - [DEBUG] Returning cached instance of singleton bean 'sessionFactory'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2169] - [DEBUG] Invoking afterPropertiesSet() on bean with name 'transactionManager'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2169] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2169] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2170] - [DEBUG] Finished creating instance of bean 'transactionManager'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2170] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2170] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2170] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2170] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2171] - [DEBUG] Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@39acfc04]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2171] - [DEBUG] Returning cached instance of singleton bean 'lifecycleProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2172] - [DEBUG] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2172] - [INFO] Root WebApplicationContext: initialization completed in 2172 ms
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2179] - [DEBUG] Initializing new StandardServletEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2180] - [DEBUG] Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2180] - [DEBUG] Adding [servletContextInitParams] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2180] - [DEBUG] Adding [jndiProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2180] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2180] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2180] - [DEBUG] Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2180] - [DEBUG] Initializing filter 'encodingFilter'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2191] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2191] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2191] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2191] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2192] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2192] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2192] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2192] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2192] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2192] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2192] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2192] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2192] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2192] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2192] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2192] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2192] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2192] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2192] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2192] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2192] - [DEBUG] Filter 'encodingFilter' configured successfully
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2193] - [DEBUG] Initializing new StandardServletEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2193] - [DEBUG] Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2193] - [DEBUG] Adding [servletContextInitParams] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2193] - [DEBUG] Adding [jndiProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2193] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2193] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2193] - [DEBUG] Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2193] - [DEBUG] Initializing filter 'openSessionInViewFilter'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2204] - [DEBUG] Filter 'openSessionInViewFilter' configured successfully
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2206] - [DEBUG] Initializing new StandardServletEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2206] - [DEBUG] Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2206] - [DEBUG] Adding [servletContextInitParams] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2206] - [DEBUG] Adding [jndiProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2206] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2207] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2207] - [DEBUG] Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2208] - [DEBUG] Initializing servlet 'springMVC'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2224] - [INFO] FrameworkServlet 'springMVC': initialization started
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2224] - [DEBUG] Servlet with name 'springMVC' will try to create custom WebApplicationContext context of class 'org.springframework.web.context.support.XmlWebApplicationContext', using parent context [Root WebApplicationContext: startup date [Thu Jun 07 11:37:36 CST 2018]; root of context hierarchy]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2224] - [DEBUG] Initializing new StandardServletEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2224] - [DEBUG] Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2224] - [DEBUG] Adding [servletContextInitParams] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2224] - [DEBUG] Adding [jndiProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2224] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2225] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2225] - [DEBUG] Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2225] - [DEBUG] Searching for key 'spring.profiles.active' in [servletConfigInitParams]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2225] - [DEBUG] Searching for key 'spring.profiles.active' in [servletContextInitParams]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2225] - [DEBUG] Searching for key 'spring.profiles.active' in [jndiProperties]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2225] - [DEBUG] Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2226] - [DEBUG] Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2226] - [DEBUG] Looking up JNDI object with name [spring.profiles.active]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2226] - [DEBUG] JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2226] - [DEBUG] Searching for key 'spring.profiles.active' in [systemProperties]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2226] - [DEBUG] Searching for key 'spring.profiles.active' in [systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2227] - [DEBUG] Could not find key 'spring.profiles.active' in any property source. Returning [null]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2227] - [DEBUG] Searching for key 'spring.profiles.default' in [servletConfigInitParams]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2227] - [DEBUG] Searching for key 'spring.profiles.default' in [servletContextInitParams]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2227] - [DEBUG] Searching for key 'spring.profiles.default' in [jndiProperties]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2227] - [DEBUG] Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2227] - [DEBUG] Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2227] - [DEBUG] Looking up JNDI object with name [spring.profiles.default]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2227] - [DEBUG] JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2227] - [DEBUG] Searching for key 'spring.profiles.default' in [systemProperties]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2227] - [DEBUG] Searching for key 'spring.profiles.default' in [systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2227] - [DEBUG] Could not find key 'spring.profiles.default' in any property source. Returning [null]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2227] - [DEBUG] Searching for key 'spring.profiles.default' in [servletConfigInitParams]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2227] - [DEBUG] Searching for key 'spring.profiles.default' in [servletContextInitParams]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2227] - [DEBUG] Searching for key 'spring.profiles.default' in [jndiProperties]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2227] - [DEBUG] Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2227] - [DEBUG] Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2227] - [DEBUG] Looking up JNDI object with name [spring.profiles.default]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2228] - [DEBUG] JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2228] - [DEBUG] Searching for key 'spring.profiles.default' in [systemProperties]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2228] - [DEBUG] Searching for key 'spring.profiles.default' in [systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2228] - [DEBUG] Could not find key 'spring.profiles.default' in any property source. Returning [null]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2231] - [INFO] Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Thu Jun 07 11:37:38 CST 2018]; parent: Root WebApplicationContext
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2231] - [DEBUG] Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2232] - [DEBUG] Replacing [servletConfigInitParams] PropertySource with [servletConfigInitParams]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2233] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2233] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2233] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2233] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2233] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2233] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2233] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2233] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2233] - [INFO] Loading XML bean definitions from class path resource [spring-mvc.xml]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2234] - [DEBUG] Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2235] - [DEBUG] Loading schema mappings from [META-INF/spring.schemas]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2236] - [DEBUG] Loaded schema mappings: {http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/jms/spring-jms-3.0.xsd=org/springframework/jms/config/spring-jms-3.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/jms/spring-jms-2.5.xsd=org/springframework/jms/config/spring-jms-2.5.xsd, http://www.springframework.org/schema/jms/spring-jms.xsd=org/springframework/jms/config/spring-jms-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/jms/spring-jms-3.1.xsd=org/springframework/jms/config/spring-jms-3.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2236] - [DEBUG] Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2243] - [DEBUG] Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2244] - [DEBUG] Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2251] - [DEBUG] Found XML schema [http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd] in classpath: org/springframework/web/servlet/config/spring-mvc-3.0.xsd
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2253] - [DEBUG] Loading bean definitions
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2254] - [DEBUG] Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/jms=org.springframework.jms.config.JmsNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2255] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2255] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2255] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2255] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2255] - [INFO] JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2256] - [DEBUG] Looking for matching resources in directory tree [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2256] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2257] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\app] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2257] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\app\controller] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2257] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\app\service] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2257] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\log] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2257] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\log\entity] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2257] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\login] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2257] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\login\controller] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2258] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\login\service] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2258] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\login\service\impl] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2258] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\role] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2258] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\role\controller] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2258] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\role\entity] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2258] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\taxi] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2258] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\taxi\controller] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2259] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\taxi\service] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2259] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\user] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2259] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\user\controller] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2259] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\user\dao] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2259] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\user\entity] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2259] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\user\service] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2259] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\user\service\impl] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2259] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\warn] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2260] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\warn\controllor] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2260] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\warn\dao] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2260] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\warn\entity] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2260] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\warn\service] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2260] - [DEBUG] Searching directory [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\warn\service\impl] for files matching pattern [D:/workSpace/mdstack/WebRoot/WEB-INF/classes/mdstack/*/**/*.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2261] - [DEBUG] Resolved location pattern [classpath*:mdstack/*/**/*.class] to resources [file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\app\controller\AppController.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\log\entity\Log.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\login\controller\LoginController.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\login\service\impl\LoginServiceImpl.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\login\service\impl\PublicServiceImpl.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\login\service\LoginService.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\login\service\PublicService.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\role\controller\RoleController.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\role\entity\Role.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\taxi\controller\TaxiController.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\taxi\service\TaxiChatManager.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\taxi\service\TaxiChatSocket.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\taxi\service\TaxiServerListener.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\user\controller\UserController.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\user\entity\User.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\user\service\impl\UserServiceImpl.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\user\service\UserService.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\warn\controllor\EsControllor.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\warn\controllor\test$GetConnection.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\warn\controllor\test.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\warn\dao\WarnDao.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\warn\dao\WarnJestClient$JestClientHolder.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\warn\dao\WarnJestClient.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\warn\entity\QueryBean.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\warn\service\impl\WarnServiceImpl.class], file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\warn\service\WarnService.class]]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2262] - [DEBUG] Identified candidate component class: file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\app\controller\AppController.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2262] - [DEBUG] Identified candidate component class: file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\login\controller\LoginController.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2264] - [DEBUG] Identified candidate component class: file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\role\controller\RoleController.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2265] - [DEBUG] Identified candidate component class: file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\taxi\controller\TaxiController.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2266] - [DEBUG] Identified candidate component class: file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\user\controller\UserController.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2268] - [DEBUG] Identified candidate component class: file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\warn\controllor\EsControllor.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2268] - [DEBUG] Identified candidate component class: file [D:\workSpace\mdstack\WebRoot\WEB-INF\classes\mdstack\warn\dao\WarnDao.class]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2270] - [DEBUG] Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2271] - [DEBUG] Neither XML 'id' nor 'name' specified - using generated bean name [org.framework.core.interceptors.MyWebBinding#7bee4955]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2271] - [DEBUG] Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2273] - [DEBUG] Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.http.MediaType#935508a]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2294] - [DEBUG] Loaded 25 bean definitions from location pattern [classpath:spring-mvc.xml]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2295] - [DEBUG] Bean factory for WebApplicationContext for namespace 'springMVC-servlet': org.springframework.beans.factory.support.DefaultListableBeanFactory@3999754a: defining beans [appController,loginController,roleController,taxiController,userController,esControllor,warnDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,authInterceptor,encodingInterceptor,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,mappingJacksonHttpMessageConverter,defaultViewResolver,multipartResolver,myExceptionResolver,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@3b2d15ad
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2317] - [DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2317] - [DEBUG] Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2317] - [DEBUG] Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2317] - [DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2339] - [DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2339] - [DEBUG] Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2340] - [DEBUG] Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2340] - [DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2340] - [DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2340] - [DEBUG] Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2340] - [DEBUG] Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2341] - [DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2341] - [DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2341] - [DEBUG] Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2341] - [DEBUG] Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2341] - [DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2341] - [DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2341] - [DEBUG] Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2341] - [DEBUG] Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2341] - [DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2341] - [DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2341] - [DEBUG] Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2341] - [DEBUG] Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2341] - [DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2341] - [DEBUG] Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@6669e4ff]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2341] - [DEBUG] Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@77909bbd]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2341] - [DEBUG] Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@7efdafed]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2342] - [INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3999754a: defining beans [appController,loginController,roleController,taxiController,userController,esControllor,warnDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,authInterceptor,encodingInterceptor,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,mappingJacksonHttpMessageConverter,defaultViewResolver,multipartResolver,myExceptionResolver,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@3b2d15ad
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2342] - [DEBUG] Creating shared instance of singleton bean 'appController'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2342] - [DEBUG] Creating instance of bean 'appController'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2352] - [DEBUG] Found injected element on class [mdstack.app.controller.AppController]: AutowiredFieldElement for private mdstack.login.service.PublicService mdstack.app.controller.AppController.publicService
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2352] - [DEBUG] Eagerly caching bean 'appController' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2358] - [DEBUG] Processing injected method of bean 'appController': AutowiredFieldElement for private mdstack.login.service.PublicService mdstack.app.controller.AppController.publicService
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2358] - [DEBUG] Returning cached instance of singleton bean 'publicService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2358] - [DEBUG] Autowiring by type from bean name 'appController' to bean named 'publicService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2358] - [DEBUG] Finished creating instance of bean 'appController'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2359] - [DEBUG] Creating shared instance of singleton bean 'loginController'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2359] - [DEBUG] Creating instance of bean 'loginController'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2361] - [DEBUG] Found injected element on class [mdstack.login.controller.LoginController]: AutowiredFieldElement for private mdstack.login.service.PublicService mdstack.login.controller.LoginController.publicService
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2361] - [DEBUG] Eagerly caching bean 'loginController' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2366] - [DEBUG] Processing injected method of bean 'loginController': AutowiredFieldElement for private mdstack.login.service.PublicService mdstack.login.controller.LoginController.publicService
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2366] - [DEBUG] Returning cached instance of singleton bean 'publicService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2366] - [DEBUG] Autowiring by type from bean name 'loginController' to bean named 'publicService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2366] - [DEBUG] Finished creating instance of bean 'loginController'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2366] - [DEBUG] Creating shared instance of singleton bean 'roleController'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2366] - [DEBUG] Creating instance of bean 'roleController'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2367] - [DEBUG] Found injected element on class [mdstack.role.controller.RoleController]: AutowiredFieldElement for private mdstack.login.service.PublicService mdstack.role.controller.RoleController.publicService
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2367] - [DEBUG] Eagerly caching bean 'roleController' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2371] - [DEBUG] Processing injected method of bean 'roleController': AutowiredFieldElement for private mdstack.login.service.PublicService mdstack.role.controller.RoleController.publicService
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2372] - [DEBUG] Returning cached instance of singleton bean 'publicService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2372] - [DEBUG] Autowiring by type from bean name 'roleController' to bean named 'publicService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2372] - [DEBUG] Finished creating instance of bean 'roleController'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2372] - [DEBUG] Creating shared instance of singleton bean 'taxiController'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2372] - [DEBUG] Creating instance of bean 'taxiController'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2372] - [DEBUG] Eagerly caching bean 'taxiController' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2376] - [DEBUG] Finished creating instance of bean 'taxiController'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2376] - [DEBUG] Creating shared instance of singleton bean 'userController'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2376] - [DEBUG] Creating instance of bean 'userController'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2377] - [DEBUG] Found injected element on class [mdstack.user.controller.UserController]: AutowiredFieldElement for private mdstack.login.service.PublicService mdstack.user.controller.UserController.publicService
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2377] - [DEBUG] Eagerly caching bean 'userController' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2383] - [DEBUG] Processing injected method of bean 'userController': AutowiredFieldElement for private mdstack.login.service.PublicService mdstack.user.controller.UserController.publicService
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2383] - [DEBUG] Returning cached instance of singleton bean 'publicService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2383] - [DEBUG] Autowiring by type from bean name 'userController' to bean named 'publicService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2383] - [DEBUG] Finished creating instance of bean 'userController'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2383] - [DEBUG] Creating shared instance of singleton bean 'esControllor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2384] - [DEBUG] Creating instance of bean 'esControllor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2391] - [DEBUG] Found injected element on class [mdstack.warn.controllor.EsControllor]: AutowiredMethodElement for public void mdstack.warn.controllor.EsControllor.setWarnService(mdstack.warn.service.WarnService)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2391] - [DEBUG] Found injected element on class [mdstack.warn.controllor.EsControllor]: AutowiredMethodElement for public void mdstack.warn.controllor.EsControllor.setWarnDao(mdstack.warn.dao.WarnDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2391] - [DEBUG] Eagerly caching bean 'esControllor' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2391] - [DEBUG] Processing injected method of bean 'esControllor': AutowiredMethodElement for public void mdstack.warn.controllor.EsControllor.setWarnService(mdstack.warn.service.WarnService)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2392] - [DEBUG] Returning cached instance of singleton bean 'warnService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2392] - [DEBUG] Autowiring by type from bean name 'esControllor' to bean named 'warnService'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2392] - [DEBUG] Processing injected method of bean 'esControllor': AutowiredMethodElement for public void mdstack.warn.controllor.EsControllor.setWarnDao(mdstack.warn.dao.WarnDao)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2392] - [DEBUG] Creating shared instance of singleton bean 'warnDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2392] - [DEBUG] Creating instance of bean 'warnDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2392] - [DEBUG] Eagerly caching bean 'warnDao' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2393] - [DEBUG] Finished creating instance of bean 'warnDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2393] - [DEBUG] Autowiring by type from bean name 'esControllor' to bean named 'warnDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2393] - [DEBUG] Finished creating instance of bean 'esControllor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2393] - [DEBUG] Returning cached instance of singleton bean 'warnDao'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2393] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2393] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2393] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2393] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2393] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2393] - [DEBUG] Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2393] - [DEBUG] Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2403] - [DEBUG] Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2425] - [DEBUG] Creating shared instance of singleton bean 'authInterceptor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2425] - [DEBUG] Creating instance of bean 'authInterceptor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2426] - [DEBUG] Eagerly caching bean 'authInterceptor' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2434] - [DEBUG] Finished creating instance of bean 'authInterceptor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2434] - [DEBUG] Creating shared instance of singleton bean 'encodingInterceptor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2434] - [DEBUG] Creating instance of bean 'encodingInterceptor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2434] - [DEBUG] Eagerly caching bean 'encodingInterceptor' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2440] - [DEBUG] Finished creating instance of bean 'encodingInterceptor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2440] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2440] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2440] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2440] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2440] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2440] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2441] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2441] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2441] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2441] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2441] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2441] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2442] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2442] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2442] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2442] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2442] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2442] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2442] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2442] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2443] - [DEBUG] Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2443] - [DEBUG] Looking for request mappings in application context: WebApplicationContext for namespace 'springMVC-servlet': startup date [Thu Jun 07 11:37:38 CST 2018]; parent: Root WebApplicationContext
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2461] - [INFO] Mapped "{[/appController/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> mdstack.app.controller.AppController.login(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2462] - [INFO] Mapped "{[/appController/twoLanding],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> mdstack.app.controller.AppController.twoLanding(javax.servlet.http.HttpServletRequest)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2463] - [INFO] Mapped "{[/appController/updatePosition],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> mdstack.app.controller.AppController.updatePosition(javax.servlet.http.HttpServletRequest)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2463] - [INFO] Mapped "{[/login/exit],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String mdstack.login.controller.LoginController.exit(javax.servlet.http.HttpServletRequest)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2464] - [INFO] Mapped "{[/login/left],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String mdstack.login.controller.LoginController.left(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2464] - [INFO] Mapped "{[/login/header],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String mdstack.login.controller.LoginController.header(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2464] - [INFO] Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String mdstack.login.controller.LoginController.login(org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2464] - [INFO] Mapped "{[/login/getMenu],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> mdstack.login.controller.LoginController.getMenu(java.lang.String)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2464] - [INFO] Mapped "{[/login/welcome],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String mdstack.login.controller.LoginController.welcome(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2464] - [INFO] Mapped "{[/login/getNowUserInfo],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> mdstack.login.controller.LoginController.getNowUserInfo()
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2465] - [INFO] Mapped "{[/login/layout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String mdstack.login.controller.LoginController.layout(javax.servlet.http.HttpServletRequest)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2465] - [INFO] Mapped "{[/roleController/roleManageRole_list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String mdstack.role.controller.RoleController.user(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2465] - [INFO] Mapped "{[/roleController/updateRoleSubmit],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Integer mdstack.role.controller.RoleController.updateRoleSubmit(java.lang.String,java.lang.String,java.lang.String)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2465] - [INFO] Mapped "{[/roleController/submitRoleMenu],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Integer mdstack.role.controller.RoleController.submitRoleMenu(java.lang.String,java.lang.String)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2465] - [INFO] Mapped "{[/roleController/roleMageGetRoleList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> mdstack.role.controller.RoleController.roleMageGetRoleList()
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2466] - [INFO] Mapped "{[/roleController/roleManageDelRole],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Integer mdstack.role.controller.RoleController.roleManageDelRole(java.lang.String)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2466] - [INFO] Mapped "{[/roleController/roleManageAddRoleSubmit],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String mdstack.role.controller.RoleController.roleManageAddRoleSubmit(java.lang.String,java.lang.String)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2466] - [INFO] Mapped "{[/roleController/roleManageGetRoleInfo],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> mdstack.role.controller.RoleController.roleManageGetRoleInfo(java.lang.String)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2466] - [INFO] Mapped "{[/roleController/roleManageGetMenuList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> mdstack.role.controller.RoleController.roleManageGetMenuList(java.lang.String)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2467] - [INFO] Mapped "{[/taxiController/takeTaxi],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> mdstack.taxi.controller.TaxiController.userList(javax.servlet.http.HttpServletRequest,java.lang.String)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2467] - [INFO] Mapped "{[/userController/user],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String mdstack.user.controller.UserController.user(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2467] - [INFO] Mapped "{[/userController/userList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> mdstack.user.controller.UserController.userList(java.lang.String,java.lang.Long,java.lang.Long)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2467] - [INFO] Mapped "{[/userController/addUserSubmit],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String mdstack.user.controller.UserController.addUserSubmit(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2468] - [INFO] Mapped "{[/userController/updateUserSubmit],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Integer mdstack.user.controller.UserController.updateUserSubmit(java.lang.String,java.lang.String,java.lang.String)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2468] - [INFO] Mapped "{[/userController/submitUserRole],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Integer mdstack.user.controller.UserController.submitUserRole(java.lang.String,java.lang.String)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2468] - [INFO] Mapped "{[/userController/userManageChangeBtn],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Integer mdstack.user.controller.UserController.userManageChangeBtn(java.lang.String,java.lang.String)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2468] - [INFO] Mapped "{[/userController/userManageDelUser],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Integer mdstack.user.controller.UserController.userManageDelUser(java.lang.String)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2468] - [INFO] Mapped "{[/userController/userManageGetUserInfo],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> mdstack.user.controller.UserController.userManageGetUserInfo(java.lang.String)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2468] - [INFO] Mapped "{[/userController/userManageGetRoleList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> mdstack.user.controller.UserController.userManageGetRoleList(java.lang.String)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2469] - [INFO] Mapped "{[/esWarn/warn_page],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String mdstack.warn.controllor.EsControllor.warnPage()
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2469] - [INFO] Mapped "{[/esWarn/flow],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto private java.util.Map<java.lang.String, java.lang.Object> mdstack.warn.controllor.EsControllor.getJsonData(java.lang.String,java.lang.String,int,int,mdstack.warn.entity.QueryBean)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2469] - [INFO] Mapped "{[/esWarn/esList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.framework.core.common.model.json.DataTable mdstack.warn.controllor.EsControllor.warnList(javax.servlet.http.HttpServletRequest,mdstack.warn.entity.QueryBean,org.springframework.ui.Model)
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2469] - [DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2469] - [DEBUG] Returning cached instance of singleton bean 'authInterceptor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2469] - [DEBUG] Returning cached instance of singleton bean 'encodingInterceptor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2469] - [DEBUG] Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2469] - [DEBUG] Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2500] - [DEBUG] Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2519] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2519] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2519] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2519] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2519] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2519] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2519] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2519] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2519] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2519] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2519] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2519] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2519] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2519] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2519] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2519] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2519] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2519] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2519] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2520] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2520] - [DEBUG] Creating shared instance of singleton bean 'mappingJacksonHttpMessageConverter'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2520] - [DEBUG] Creating instance of bean 'mappingJacksonHttpMessageConverter'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2695] - [DEBUG] Eagerly caching bean 'mappingJacksonHttpMessageConverter' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2702] - [DEBUG] Creating instance of bean 'org.springframework.http.MediaType#935508a'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2705] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2705] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2706] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2706] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2706] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2706] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2706] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2706] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2706] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2706] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2706] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2706] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2706] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2706] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2706] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2706] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2707] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2707] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2707] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2707] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2707] - [DEBUG] No property editor [java.util.MapEditor] found for type java.util.Map according to 'Editor' suffix convention
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2714] - [DEBUG] Finished creating instance of bean 'org.springframework.http.MediaType#935508a'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2714] - [DEBUG] Finished creating instance of bean 'mappingJacksonHttpMessageConverter'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2714] - [DEBUG] Creating instance of bean 'org.framework.core.interceptors.MyWebBinding#7bee4955'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2721] - [DEBUG] Finished creating instance of bean 'org.framework.core.interceptors.MyWebBinding#7bee4955'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2721] - [DEBUG] Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2748] - [DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2749] - [DEBUG] Returning cached instance of singleton bean 'mappingJacksonHttpMessageConverter'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2749] - [DEBUG] Creating shared instance of singleton bean 'defaultViewResolver'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2749] - [DEBUG] Creating instance of bean 'defaultViewResolver'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2755] - [DEBUG] Eagerly caching bean 'defaultViewResolver' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2770] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2770] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2770] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2770] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2770] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2770] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2770] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2770] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2770] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2770] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2770] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2770] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2771] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2771] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2771] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2771] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2771] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2771] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2771] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2771] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2771] - [DEBUG] Finished creating instance of bean 'defaultViewResolver'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2771] - [DEBUG] Creating shared instance of singleton bean 'multipartResolver'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2771] - [DEBUG] Creating instance of bean 'multipartResolver'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2780] - [DEBUG] Eagerly caching bean 'multipartResolver' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2786] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2786] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2786] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2786] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2786] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2786] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2787] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2787] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2787] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2787] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2787] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2787] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2787] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2787] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2787] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2787] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2787] - [DEBUG] Initializing new StandardEnvironment
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2787] - [DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2787] - [DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2787] - [DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2787] - [DEBUG] Finished creating instance of bean 'multipartResolver'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2787] - [DEBUG] Creating shared instance of singleton bean 'myExceptionResolver'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2787] - [DEBUG] Creating instance of bean 'myExceptionResolver'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2788] - [DEBUG] Eagerly caching bean 'myExceptionResolver' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2791] - [DEBUG] Finished creating instance of bean 'myExceptionResolver'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2791] - [DEBUG] Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2791] - [DEBUG] Creating instance of bean 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2791] - [DEBUG] Eagerly caching bean 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2797] - [DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2797] - [DEBUG] Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2797] - [DEBUG] Creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2797] - [DEBUG] Eagerly caching bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2812] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2812] - [INFO] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2812] - [DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2812] - [DEBUG] Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2812] - [DEBUG] Creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2812] - [DEBUG] Eagerly caching bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Looking for URL mappings in application context: WebApplicationContext for namespace 'springMVC-servlet': startup date [Thu Jun 07 11:37:38 CST 2018]; parent: Root WebApplicationContext
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'appController': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'loginController': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'roleController': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'taxiController': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'userController': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'esControllor': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'warnDao': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'authInterceptor': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'encodingInterceptor': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'mappingJacksonHttpMessageConverter': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'defaultViewResolver': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'multipartResolver': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'myExceptionResolver': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2834] - [DEBUG] Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2835] - [DEBUG] Rejected bean name 'environment': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2835] - [DEBUG] Rejected bean name 'systemProperties': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2835] - [DEBUG] Rejected bean name 'systemEnvironment': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2835] - [DEBUG] Rejected bean name 'servletConfig': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2835] - [DEBUG] Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2835] - [DEBUG] Rejected bean name 'messageSource': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2835] - [DEBUG] Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2835] - [DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2835] - [DEBUG] Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2835] - [DEBUG] Creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2835] - [DEBUG] Eagerly caching bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2839] - [DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2839] - [DEBUG] Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2839] - [DEBUG] Creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2839] - [DEBUG] Eagerly caching bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter' to allow for resolving potential circular references
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2843] - [DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2843] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2843] - [DEBUG] Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@1999ff57]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2843] - [DEBUG] Returning cached instance of singleton bean 'lifecycleProcessor'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2843] - [DEBUG] Returning cached instance of singleton bean 'multipartResolver'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2843] - [DEBUG] Using MultipartResolver [org.springframework.web.multipart.commons.CommonsMultipartResolver@7c200191]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2845] - [DEBUG] Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2849] - [DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2849] - [DEBUG] Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@40ddd965]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2850] - [DEBUG] Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2856] - [DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2856] - [DEBUG] Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@6e27165]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2856] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2856] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2856] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2857] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2857] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2857] - [DEBUG] Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2857] - [DEBUG] Returning cached instance of singleton bean 'myExceptionResolver'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2858] - [DEBUG] Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2862] - [DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2862] - [DEBUG] Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4aa1e3aa]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2862] - [DEBUG] Returning cached instance of singleton bean 'defaultViewResolver'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2863] - [DEBUG] Creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2870] - [DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2870] - [DEBUG] Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@60efea7e]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2871] - [DEBUG] Published WebApplicationContext of servlet 'springMVC' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.springMVC]
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2871] - [INFO] FrameworkServlet 'springMVC': initialization completed in 647 ms
+2018-06-07 11:37:38 [192.168.199.174-startStop-1:2871] - [DEBUG] Servlet 'springMVC' configured successfully

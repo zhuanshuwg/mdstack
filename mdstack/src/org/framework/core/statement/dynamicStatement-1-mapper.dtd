@@ -1,0 +1,10 @@
+<!ELEMENT mapper (
+	(hql|sql)*
+)>
+	<!ATTLIST mapper namespace CDATA #REQUIRED>
+	
+<!ELEMENT hql (#PCDATA)>
+	<!ATTLIST hql id CDATA #REQUIRED>
+
+<!ELEMENT sql (#PCDATA)>
+	<!ATTLIST sql id CDATA #REQUIRED>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<entry key="app_preset_prof_preset_name">AppController Launch Configuration</entry>
+<entry key="app_preset_prof_preset_filter_s"/>
+<entry key="app_preset_prof_preset_filter_p">mdstack.app.controller.*,
+mdstack.log.entity.*,
+mdstack.login.controller.*,
+mdstack.login.service.*,
+mdstack.role.controller.*,
+mdstack.role.entity.*,
+mdstack.taxi.controller.*,
+mdstack.user.controller.*,
+mdstack.user.entity.*,
+mdstack.user.service.*,
+mdstack.warn.controllor.*,
+mdstack.warn.dao.*,
+mdstack.warn.entity.*,
+mdstack.warn.service.*,
+org.framework.core.annotation.*,
+org.framework.core.aop.*,
+org.framework.core.common.controller.*,
+org.framework.core.common.dao.*,
+org.framework.core.common.dto.datatable.*,
+org.framework.core.common.entity.*,
+org.framework.core.common.exception.*,
+org.framework.core.common.model.common.*,
+org.framework.core.common.model.json.*,
+org.framework.core.common.service.*,
+org.framework.core.extend.datasource.*,
+org.framework.core.extend.ioSearchbox.*,
+org.framework.core.interceptors.*,
+org.framework.core.listener.*,
+org.framework.core.security.*,
+org.framework.core.statement.*,
+org.framework.core.util.*,
+org.framework.tag.core.*</entry>
+<entry key="app_preset_prof_preset_alloc_p">10</entry>
+<entry key="app_preset_"/>
+<entry key="app_preset_prof_preset_samplingRefreshRate_s">1000</entry>
+<entry key="app_preset_prof_preset_stacks_p">false</entry>
+<entry key="app_preset_prof_preset_roots_p">mdstack.app.controller.**
+mdstack.log.entity.**
+mdstack.login.controller.**
+mdstack.login.service.**
+mdstack.role.controller.**
+mdstack.role.entity.**
+mdstack.taxi.controller.**
+mdstack.user.controller.**
+mdstack.user.entity.**
+mdstack.user.service.**
+mdstack.warn.controllor.**
+mdstack.warn.dao.**
+mdstack.warn.entity.**
+mdstack.warn.service.**
+org.framework.core.annotation.**
+org.framework.core.aop.**
+org.framework.core.common.controller.**
+org.framework.core.common.dao.**
+org.framework.core.common.dto.datatable.**
+org.framework.core.common.entity.**
+org.framework.core.common.exception.**
+org.framework.core.common.model.common.**
+org.framework.core.common.model.json.**
+org.framework.core.common.service.**
+org.framework.core.extend.datasource.**
+org.framework.core.extend.ioSearchbox.**
+org.framework.core.interceptors.**
+org.framework.core.listener.**
+org.framework.core.security.**
+org.framework.core.statement.**
+org.framework.core.util.**
+org.framework.tag.core.**
+</entry>
+<entry key="profiler.settings.instrument.empty.methods">false</entry>
+<entry key="myeclipse.profiling.mode">0</entry>
+<entry key="profiler.settings.istrument.getter.setter.methods">false</entry>
+<entry key="app_preset_prof_preset_samplingRate_s">100</entry>
+<entry key="app_preset_prof_preset_filterMode_s">true</entry>
+<entry key="app_preset_prof_preset_selector"/>
+<entry key="app_preset_prof_preset_refreshRate_s">1000</entry>
+<entry key="app_preset_prof_preset_runnables_p">true</entry>
+<entry key="app_preset_prof_preset_memoryMode_p">true</entry>
+<entry key="app_preset_prof_preset_filterMode_p">false</entry>
+</properties>

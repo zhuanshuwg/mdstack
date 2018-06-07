@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+    "-//Guohe/DynamicStatement Mapper DTD 1.0//EN"
+    "http://www.org/dtd/dynamicStatement-1-mapper.dtd">
+    
+<mapper namespace="user" >
+
+	<sql id="userlist1" >
+		<![CDATA[
+		 select * from t_user  where 1=1 
+		 <#if userName!=null && userName!='' > and userName = '${userName}' </#if> 
+		 limit ${start}, ${end}
+		]]>
+	</sql>
+	
+	<sql id="count" >
+		<![CDATA[
+		 select COUNT(id) from t_user  where 1=1 
+		 <#if userName!=null && userName!='' > and userName = '${userName}' </#if>
+		]]>
+	</sql>
+	
+	
+	
+</mapper>
